@@ -1,0 +1,32 @@
+version: '3'
+services:
+  mysql:
+    image: mysql:latest
+    container_name: database
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: think
+      MYSQL_USER: think
+      MYSQL_PASSWORD: root
+    ports:
+      - "3306:3306"
+    networks:
+      - localeNetwork
+    volumes:
+      - mysql-data:/var/lib/mysql
+
+  express:
+    build: ./server
+    container_name: backend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - mysql
+    networks:
+      - localeNetwork
+
+networks:
+  localeNetwork:
+
+volumes:
+  mysql-data:
