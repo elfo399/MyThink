@@ -1,9 +1,9 @@
 // Informazioni del database
-const DB_HOST = "Database";
+const DB_HOST = "database";
 const DB_PORT = 3306;
-const DB_USER = "ross";
+const DB_USER = "think";
 const DB_PASSWORD = "root";
-const DB_DATABASE = "myThink";
+const DB_DATABASE = "think";
 
 // Altre costanti
 const APP_PORT = 3000;
