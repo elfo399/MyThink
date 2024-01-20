@@ -38,10 +38,9 @@ connection.connect((err) => {
             if (retryCount < maxRetries) {
                 retryCount++;
                 console.log(`Tentativo di connessione al database ${retryCount}/${maxRetries}...`);
-                
                 // Attendere per un certo periodo di tempo prima di ritentare
                 setTimeout(() => {
-                    connection.connect(retryConnection);
+                    connection.connect(retryConnection)
                 }, 5000); // Ritenta dopo 5 secondi (puoi regolare il tempo di attesa a tuo piacimento)
             } else {
                 console.error('Numero massimo di tentativi di connessione raggiunto. Il server Express non verrà avviato.');
