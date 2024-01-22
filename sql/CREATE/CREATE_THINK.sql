@@ -1,8 +1,8 @@
 use think;
 
-CREATE TABLE `PostIt` (
-  `Id` int NOT NULL AUTO_INCREMENT,
-  `Nome` varchar(100) NOT NULL,
-  `Data` date NOT NULL,
-  PRIMARY KEY (`Id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+CREATE TABLE think.`text` (
+	id int auto_increment NOT NULL,
+	Value varchar(255) NOT NULL,
+	`Data` DATE NOT NULL,
+	CONSTRAINT text_pk PRIMARY KEY (id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;

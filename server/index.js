@@ -2,6 +2,7 @@ const http = require('http');
 const express = require('express');
 const mysql = require('mysql2');
 const bodyParser = require('body-parser');
+const cors = require('cors');
 const app = express();
 
 // Include route files
@@ -13,6 +14,10 @@ app.use('/users', usersRoute);
 app.use(bodyParser.json());
 
 const port = process.env.PORT || 3000;
+
+app.use(cors({
+  origin: 'http://localhost:4200'
+}));
 
 const connection = mysql.createConnection({
     host: constants.DB_HOST,
@@ -67,7 +72,7 @@ function startServer() {
   });
   
   app.get('/getData', (req, res) => {
-    const sqlQuery = 'SELECT * FROM PostIt';
+    const sqlQuery = 'SELECT * FROM text';
   
     // Execute the query
     connection.query(sqlQuery, (err, results) => {
@@ -85,16 +90,10 @@ function startServer() {
     });
   });
   
-  app.post('/insert', (req, res) => {
-    
-    const datiRicevuti = req.body;
-  
-    // Fai qualcosa con i dati ricevuti
-    console.log(req.body.nome);
-    console.log(req.body.data);
-  
-    const sqlQuery = 'INSERT INTO PostIt (Nome, Data) VALUES (?, ?)';
-    const values = [req.body.nome, req.body.data];
+  app.post('/insert', (req, res) => {  
+
+    const sqlQuery = 'INSERT INTO text (Value, Data) VALUES (?, ?)';
+    const values = [req.body.value, req.body.data];
 
     // Execute the query
     connection.query(sqlQuery, values, (err, results) => {
