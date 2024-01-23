@@ -1,0 +1,45 @@
+$Light-mode-icon: url("/assets/image/L_mode.png");
+$Dark-mode-icon: url("/assets/image/D_mode.png");
+
+.container {
+    margin-top: 10px;
+    padding: 0 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    height: 100px;
+}
+
+.date{
+   
+}
+
+.time {
+}
+
+.toggleMode {
+
+}
+
+.lightMode {
+    width: 100px;
+    height: 100px;
+    background-image: $Light-mode-icon;
+    background-color: transparent;
+    border: none; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.darkMode {
+    width: 100px;
+    height: 100px;
+    background-image: $Dark-mode-icon;
+    background-color: transparent;
+    border: none; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

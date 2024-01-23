@@ -16,7 +16,7 @@ services:
       - mysql-data:/var/lib/mysql
 
   express:
-    build: ./server
+    build: ./backEnd
     container_name: backend
     ports:
       - "3000:3000"

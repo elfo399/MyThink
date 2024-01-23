@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    margin-top: 10px;
+    background-color: black;
+    border-radius: 10px;
+    border: 5px solid white;
+    padding: 5px 10px;
+    gap: 12px;
+    transform: rotate(-5deg);
+}
+
+.iconContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textContainer {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 27px;
+}
+
+.mat-icon {
+    color: white;
+    font-size: 36px;
+    width: 36px;
+    height: 36px;
+}

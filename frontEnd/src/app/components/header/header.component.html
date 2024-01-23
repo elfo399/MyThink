@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="date">
+        <app-widget-date></app-widget-date>
+    </div>
+
+    <div class="time">
+        
+    </div>
+
+    <div class="toggleMode">
+        <button [ngClass]="isButtonClicked ? 'lightMode' : 'darkMode'" (click)="changeThemeMode()">
+        </button>
+    </div>
+    
+</div>

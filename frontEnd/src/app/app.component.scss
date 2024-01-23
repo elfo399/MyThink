@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px 0 25px;
+}
+
+.containerWorkSpace {
+    width: 75vw;
+    height: 80vh;
+}
+
+.containerCB {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20%;
+}
+ 
+// @media screen and (max-width: 700px) {
+//     body {
+//        padding: 170px 0 0 0;
+//        width: 100%
+//     }
+//  }
+ 
