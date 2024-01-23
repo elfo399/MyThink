@@ -71,7 +71,7 @@ function startServer() {
       res.send('hello root node');
   });
   
-  app.get('/getData', (req, res) => {
+  app.get('/selectAllText', (req, res) => {
     const sqlQuery = 'SELECT * FROM text';
   
     // Execute the query

@@ -16,4 +16,9 @@ export class ManagerTextPostItService {
   insertNewPostIt(postit: insertText): Observable<insertText>  {
     return this.http.post<insertText>(this.endpoints.insertText(), postit);
   }
+
+  selectAllPostIt(): Observable<insertText[]>  {
+    return this.http.get<insertText[]>(this.endpoints.selectAllText());
+  }
+
 }
