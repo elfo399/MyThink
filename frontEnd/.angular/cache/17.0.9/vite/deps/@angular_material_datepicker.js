@@ -3,7 +3,7 @@ import {
   ScrollDispatcher,
   ScrollingModule,
   ViewportRuler
-} from "./chunk-HFN3TO7I.js";
+} from "./chunk-6ECEEZ35.js";
 import {
   ControlContainer,
   FormGroupDirective,
@@ -12,7 +12,7 @@ import {
   NgControl,
   NgForm,
   Validators
-} from "./chunk-4UONRI2X.js";
+} from "./chunk-Z6ZAYZ4Y.js";
 import {
   DateAdapter,
   ErrorStateMatcher,
@@ -22,7 +22,7 @@ import {
   MatRippleModule,
   mixinColor,
   mixinErrorState
-} from "./chunk-L7F6UNZQ.js";
+} from "./chunk-3XF6YMAF.js";
 import {
   A11yModule,
   BACKSPACE,
@@ -57,7 +57,7 @@ import {
   hasModifierKey,
   normalizePassiveListenerOptions,
   supportsScrollBehavior
-} from "./chunk-WQX7VSLJ.js";
+} from "./chunk-55JNB2NI.js";
 import {
   animate,
   keyframes,
@@ -65,16 +65,16 @@ import {
   style,
   transition,
   trigger
-} from "./chunk-W67FINZ6.js";
-import "./chunk-EWHMQQRD.js";
-import "./chunk-QMOXLFJ2.js";
+} from "./chunk-Z5K2XT6Q.js";
+import "./chunk-6QIB3KPD.js";
+import "./chunk-57DB7DSB.js";
 import {
   CommonModule,
   DOCUMENT,
   Location,
   NgClass,
   NgTemplateOutlet
-} from "./chunk-BA5DVWTE.js";
+} from "./chunk-4FWDQRHS.js";
 import {
   ANIMATION_MODULE_TYPE,
   ApplicationRef,
@@ -93,6 +93,7 @@ import {
   InjectionToken,
   Injector,
   Input,
+  InputFlags,
   NgModule,
   NgZone,
   Optional,
@@ -157,7 +158,7 @@ import {
   ɵɵtextInterpolate,
   ɵɵtextInterpolate1,
   ɵɵviewQuery
-} from "./chunk-ZQSTUKTM.js";
+} from "./chunk-HI2NLCCK.js";
 import {
   EMPTY,
   Observable,
@@ -175,7 +176,7 @@ import {
   take,
   takeUntil,
   takeWhile
-} from "./chunk-Z7TUEFY2.js";
+} from "./chunk-V4QF72PL.js";
 
 // node_modules/@angular/cdk/fesm2022/portal.mjs
 function throwNullPortalError() {
@@ -603,7 +604,7 @@ _CdkPortalOutlet.ɵdir = ɵɵdefineDirective({
   type: _CdkPortalOutlet,
   selectors: [["", "cdkPortalOutlet", ""]],
   inputs: {
-    portal: ["cdkPortalOutlet", "portal"]
+    portal: [InputFlags.None, "cdkPortalOutlet", "portal"]
   },
   outputs: {
     attached: "attached"
@@ -648,7 +649,7 @@ _PortalHostDirective.ɵdir = ɵɵdefineDirective({
   type: _PortalHostDirective,
   selectors: [["", "cdkPortalHost", ""], ["", "portalHost", ""]],
   inputs: {
-    portal: ["cdkPortalHost", "portal"]
+    portal: [InputFlags.None, "cdkPortalHost", "portal"]
   },
   exportAs: ["cdkPortalHost"],
   features: [ɵɵProvidersFeature([{
@@ -3065,28 +3066,28 @@ _CdkConnectedOverlay.ɵdir = ɵɵdefineDirective({
   type: _CdkConnectedOverlay,
   selectors: [["", "cdk-connected-overlay", ""], ["", "connected-overlay", ""], ["", "cdkConnectedOverlay", ""]],
   inputs: {
-    origin: ["cdkConnectedOverlayOrigin", "origin"],
-    positions: ["cdkConnectedOverlayPositions", "positions"],
-    positionStrategy: ["cdkConnectedOverlayPositionStrategy", "positionStrategy"],
-    offsetX: ["cdkConnectedOverlayOffsetX", "offsetX"],
-    offsetY: ["cdkConnectedOverlayOffsetY", "offsetY"],
-    width: ["cdkConnectedOverlayWidth", "width"],
-    height: ["cdkConnectedOverlayHeight", "height"],
-    minWidth: ["cdkConnectedOverlayMinWidth", "minWidth"],
-    minHeight: ["cdkConnectedOverlayMinHeight", "minHeight"],
-    backdropClass: ["cdkConnectedOverlayBackdropClass", "backdropClass"],
-    panelClass: ["cdkConnectedOverlayPanelClass", "panelClass"],
-    viewportMargin: ["cdkConnectedOverlayViewportMargin", "viewportMargin"],
-    scrollStrategy: ["cdkConnectedOverlayScrollStrategy", "scrollStrategy"],
-    open: ["cdkConnectedOverlayOpen", "open"],
-    disableClose: ["cdkConnectedOverlayDisableClose", "disableClose"],
-    transformOriginSelector: ["cdkConnectedOverlayTransformOriginOn", "transformOriginSelector"],
-    hasBackdrop: ["cdkConnectedOverlayHasBackdrop", "hasBackdrop", booleanAttribute],
-    lockPosition: ["cdkConnectedOverlayLockPosition", "lockPosition", booleanAttribute],
-    flexibleDimensions: ["cdkConnectedOverlayFlexibleDimensions", "flexibleDimensions", booleanAttribute],
-    growAfterOpen: ["cdkConnectedOverlayGrowAfterOpen", "growAfterOpen", booleanAttribute],
-    push: ["cdkConnectedOverlayPush", "push", booleanAttribute],
-    disposeOnNavigation: ["cdkConnectedOverlayDisposeOnNavigation", "disposeOnNavigation", booleanAttribute]
+    origin: [InputFlags.None, "cdkConnectedOverlayOrigin", "origin"],
+    positions: [InputFlags.None, "cdkConnectedOverlayPositions", "positions"],
+    positionStrategy: [InputFlags.None, "cdkConnectedOverlayPositionStrategy", "positionStrategy"],
+    offsetX: [InputFlags.None, "cdkConnectedOverlayOffsetX", "offsetX"],
+    offsetY: [InputFlags.None, "cdkConnectedOverlayOffsetY", "offsetY"],
+    width: [InputFlags.None, "cdkConnectedOverlayWidth", "width"],
+    height: [InputFlags.None, "cdkConnectedOverlayHeight", "height"],
+    minWidth: [InputFlags.None, "cdkConnectedOverlayMinWidth", "minWidth"],
+    minHeight: [InputFlags.None, "cdkConnectedOverlayMinHeight", "minHeight"],
+    backdropClass: [InputFlags.None, "cdkConnectedOverlayBackdropClass", "backdropClass"],
+    panelClass: [InputFlags.None, "cdkConnectedOverlayPanelClass", "panelClass"],
+    viewportMargin: [InputFlags.None, "cdkConnectedOverlayViewportMargin", "viewportMargin"],
+    scrollStrategy: [InputFlags.None, "cdkConnectedOverlayScrollStrategy", "scrollStrategy"],
+    open: [InputFlags.None, "cdkConnectedOverlayOpen", "open"],
+    disableClose: [InputFlags.None, "cdkConnectedOverlayDisableClose", "disableClose"],
+    transformOriginSelector: [InputFlags.None, "cdkConnectedOverlayTransformOriginOn", "transformOriginSelector"],
+    hasBackdrop: [InputFlags.HasDecoratorInputTransform, "cdkConnectedOverlayHasBackdrop", "hasBackdrop", booleanAttribute],
+    lockPosition: [InputFlags.HasDecoratorInputTransform, "cdkConnectedOverlayLockPosition", "lockPosition", booleanAttribute],
+    flexibleDimensions: [InputFlags.HasDecoratorInputTransform, "cdkConnectedOverlayFlexibleDimensions", "flexibleDimensions", booleanAttribute],
+    growAfterOpen: [InputFlags.HasDecoratorInputTransform, "cdkConnectedOverlayGrowAfterOpen", "growAfterOpen", booleanAttribute],
+    push: [InputFlags.HasDecoratorInputTransform, "cdkConnectedOverlayPush", "push", booleanAttribute],
+    disposeOnNavigation: [InputFlags.HasDecoratorInputTransform, "cdkConnectedOverlayDisposeOnNavigation", "disposeOnNavigation", booleanAttribute]
   },
   outputs: {
     backdropClick: "backdropClick",
@@ -3492,8 +3493,8 @@ _MatButtonBase.ɵdir = ɵɵdefineDirective({
   type: _MatButtonBase,
   inputs: {
     color: "color",
-    disableRipple: ["disableRipple", "disableRipple", booleanAttribute],
-    disabled: ["disabled", "disabled", booleanAttribute]
+    disableRipple: [InputFlags.HasDecoratorInputTransform, "disableRipple", "disableRipple", booleanAttribute],
+    disabled: [InputFlags.HasDecoratorInputTransform, "disabled", "disabled", booleanAttribute]
   },
   features: [ɵɵInputTransformsFeature]
 });
@@ -3570,7 +3571,7 @@ _MatAnchorBase.ɵfac = function MatAnchorBase_Factory(t) {
 _MatAnchorBase.ɵdir = ɵɵdefineDirective({
   type: _MatAnchorBase,
   inputs: {
-    tabIndex: ["tabIndex", "tabIndex", (value) => {
+    tabIndex: [InputFlags.HasDecoratorInputTransform, "tabIndex", "tabIndex", (value) => {
       return value == null ? void 0 : numberAttribute(value);
     }]
   },
@@ -3825,7 +3826,7 @@ _MatFabButton.ɵcmp = ɵɵdefineComponent({
     }
   },
   inputs: {
-    extended: ["extended", "extended", booleanAttribute]
+    extended: [InputFlags.HasDecoratorInputTransform, "extended", "extended", booleanAttribute]
   },
   exportAs: ["matButton"],
   features: [ɵɵInputTransformsFeature, ɵɵInheritDefinitionFeature],
@@ -4050,7 +4051,7 @@ _MatFabAnchor.ɵcmp = ɵɵdefineComponent({
     }
   },
   inputs: {
-    extended: ["extended", "extended", booleanAttribute]
+    extended: [InputFlags.HasDecoratorInputTransform, "extended", "extended", booleanAttribute]
   },
   exportAs: ["matButton", "matAnchor"],
   features: [ɵɵInputTransformsFeature, ɵɵInheritDefinitionFeature],
@@ -4620,7 +4621,7 @@ function MatFormField_Conditional_6_Template(rf, ctx) {
   if (rf & 2) {
     const ctx_r4 = ɵɵnextContext();
     ɵɵproperty("matFormFieldNotchedOutlineOpen", ctx_r4._shouldLabelFloat());
-    ɵɵadvance(1);
+    ɵɵadvance();
     ɵɵconditional(1, !ctx_r4._forceDisplayInfixLabel() ? 1 : -1);
   }
 }
@@ -4689,7 +4690,7 @@ function MatFormField_Case_17_Conditional_1_Template(rf, ctx) {
   if (rf & 2) {
     const ctx_r20 = ɵɵnextContext(2);
     ɵɵproperty("id", ctx_r20._hintLabelId);
-    ɵɵadvance(1);
+    ɵɵadvance();
     ɵɵtextInterpolate(ctx_r20.hintLabel);
   }
 }
@@ -4705,7 +4706,7 @@ function MatFormField_Case_17_Template(rf, ctx) {
   if (rf & 2) {
     const ctx_r12 = ɵɵnextContext();
     ɵɵproperty("@transitionMessages", ctx_r12._subscriptAnimationState);
-    ɵɵadvance(1);
+    ɵɵadvance();
     ɵɵconditional(1, ctx_r12.hintLabel ? 1 : -1);
   }
 }
@@ -4856,7 +4857,7 @@ _MatPrefix.ɵdir = ɵɵdefineDirective({
   type: _MatPrefix,
   selectors: [["", "matPrefix", ""], ["", "matIconPrefix", ""], ["", "matTextPrefix", ""]],
   inputs: {
-    _isTextSelector: ["matTextPrefix", "_isTextSelector"]
+    _isTextSelector: [InputFlags.None, "matTextPrefix", "_isTextSelector"]
   },
   features: [ɵɵProvidersFeature([{
     provide: MAT_PREFIX,
@@ -4897,7 +4898,7 @@ _MatSuffix.ɵdir = ɵɵdefineDirective({
   type: _MatSuffix,
   selectors: [["", "matSuffix", ""], ["", "matIconSuffix", ""], ["", "matTextSuffix", ""]],
   inputs: {
-    _isTextSelector: ["matTextSuffix", "_isTextSelector"]
+    _isTextSelector: [InputFlags.None, "matTextSuffix", "_isTextSelector"]
   },
   features: [ɵɵProvidersFeature([{
     provide: MAT_SUFFIX,
@@ -5138,7 +5139,7 @@ _MatFormFieldNotchedOutline.ɵcmp = ɵɵdefineComponent({
     }
   },
   inputs: {
-    open: ["matFormFieldNotchedOutlineOpen", "open"]
+    open: [InputFlags.None, "matFormFieldNotchedOutlineOpen", "open"]
   },
   attrs: _c12,
   ngContentSelectors: _c22,
@@ -5698,21 +5699,21 @@ _MatFormField.ɵcmp = ɵɵdefineComponent({
       ɵɵconditional(4, !ctx._hasOutline() && !ctx._control.disabled ? 4 : -1);
       ɵɵadvance(2);
       ɵɵconditional(6, ctx._hasOutline() ? 6 : -1);
-      ɵɵadvance(1);
+      ɵɵadvance();
       ɵɵconditional(7, ctx._hasIconPrefix ? 7 : -1);
-      ɵɵadvance(1);
+      ɵɵadvance();
       ɵɵconditional(8, ctx._hasTextPrefix ? 8 : -1);
       ɵɵadvance(2);
       ɵɵconditional(10, !ctx._hasOutline() || ctx._forceDisplayInfixLabel() ? 10 : -1);
       ɵɵadvance(2);
       ɵɵconditional(12, ctx._hasTextSuffix ? 12 : -1);
-      ɵɵadvance(1);
+      ɵɵadvance();
       ɵɵconditional(13, ctx._hasIconSuffix ? 13 : -1);
-      ɵɵadvance(1);
+      ɵɵadvance();
       ɵɵconditional(14, !ctx._hasOutline() ? 14 : -1);
-      ɵɵadvance(1);
+      ɵɵadvance();
       ɵɵclassProp("mat-mdc-form-field-subscript-dynamic-size", ctx.subscriptSizing === "dynamic");
-      ɵɵadvance(1);
+      ɵɵadvance();
       ɵɵconditional(16, (MatFormField_contFlowTmp = ctx._getDisplayedMessages()) === "error" ? 16 : MatFormField_contFlowTmp === "hint" ? 17 : -1);
     }
   },
@@ -6265,9 +6266,9 @@ _CdkTextareaAutosize.ɵdir = ɵɵdefineDirective({
     }
   },
   inputs: {
-    minRows: ["cdkAutosizeMinRows", "minRows"],
-    maxRows: ["cdkAutosizeMaxRows", "maxRows"],
-    enabled: ["cdkTextareaAutosize", "enabled", booleanAttribute],
+    minRows: [InputFlags.None, "cdkAutosizeMinRows", "minRows"],
+    maxRows: [InputFlags.None, "cdkAutosizeMaxRows", "maxRows"],
+    enabled: [InputFlags.HasDecoratorInputTransform, "cdkTextareaAutosize", "enabled", booleanAttribute],
     placeholder: "placeholder"
   },
   exportAs: ["cdkTextareaAutosize"],
@@ -6625,7 +6626,7 @@ _MatInput.ɵdir = ɵɵdefineDirective({
     required: "required",
     type: "type",
     errorStateMatcher: "errorStateMatcher",
-    userAriaDescribedBy: ["aria-describedby", "userAriaDescribedBy"],
+    userAriaDescribedBy: [InputFlags.None, "aria-describedby", "userAriaDescribedBy"],
     value: "value",
     readonly: "readonly"
   },
@@ -6791,10 +6792,10 @@ function MatCalendarBody_Conditional_0_Template(rf, ctx) {
   }
   if (rf & 2) {
     const ctx_r0 = ɵɵnextContext();
-    ɵɵadvance(1);
+    ɵɵadvance();
     ɵɵstyleProp("padding-top", ctx_r0._cellPadding)("padding-bottom", ctx_r0._cellPadding);
     ɵɵattribute("colspan", ctx_r0.numCols);
-    ɵɵadvance(1);
+    ɵɵadvance();
     ɵɵtextInterpolate1(" ", ctx_r0.label, " ");
   }
 }
@@ -6808,7 +6809,7 @@ function MatCalendarBody_For_2_Conditional_1_Template(rf, ctx) {
     const ctx_r7 = ɵɵnextContext(2);
     ɵɵstyleProp("padding-top", ctx_r7._cellPadding)("padding-bottom", ctx_r7._cellPadding);
     ɵɵattribute("colspan", ctx_r7._firstRowOffset);
-    ɵɵadvance(1);
+    ɵɵadvance();
     ɵɵtextInterpolate1(" ", ctx_r7._firstRowOffset >= ctx_r7.labelMinRequiredCells ? ctx_r7.label : "", " ");
   }
 }
@@ -6840,13 +6841,13 @@ function MatCalendarBody_For_2_For_3_Template(rf, ctx) {
     const ctx_r8 = ɵɵnextContext();
     ɵɵstyleProp("width", ctx_r8._cellWidth)("padding-top", ctx_r8._cellPadding)("padding-bottom", ctx_r8._cellPadding);
     ɵɵattribute("data-mat-row", rowIndex_r3)("data-mat-col", colIndex_r10);
-    ɵɵadvance(1);
+    ɵɵadvance();
     ɵɵclassProp("mat-calendar-body-disabled", !item_r9.enabled)("mat-calendar-body-active", ctx_r8._isActiveCell(rowIndex_r3, colIndex_r10))("mat-calendar-body-range-start", ctx_r8._isRangeStart(item_r9.compareValue))("mat-calendar-body-range-end", ctx_r8._isRangeEnd(item_r9.compareValue))("mat-calendar-body-in-range", ctx_r8._isInRange(item_r9.compareValue))("mat-calendar-body-comparison-bridge-start", ctx_r8._isComparisonBridgeStart(item_r9.compareValue, rowIndex_r3, colIndex_r10))("mat-calendar-body-comparison-bridge-end", ctx_r8._isComparisonBridgeEnd(item_r9.compareValue, rowIndex_r3, colIndex_r10))("mat-calendar-body-comparison-start", ctx_r8._isComparisonStart(item_r9.compareValue))("mat-calendar-body-comparison-end", ctx_r8._isComparisonEnd(item_r9.compareValue))("mat-calendar-body-in-comparison-range", ctx_r8._isInComparisonRange(item_r9.compareValue))("mat-calendar-body-preview-start", ctx_r8._isPreviewStart(item_r9.compareValue))("mat-calendar-body-preview-end", ctx_r8._isPreviewEnd(item_r9.compareValue))("mat-calendar-body-in-preview", ctx_r8._isInPreview(item_r9.compareValue));
     ɵɵproperty("ngClass", item_r9.cssClasses)("tabindex", ctx_r8._isActiveCell(rowIndex_r3, colIndex_r10) ? 0 : -1);
     ɵɵattribute("aria-label", item_r9.ariaLabel)("aria-disabled", !item_r9.enabled || null)("aria-pressed", ctx_r8._isSelected(item_r9.compareValue))("aria-current", ctx_r8.todayValue === item_r9.compareValue ? "date" : null)("aria-describedby", ctx_r8._getDescribedby(item_r9.compareValue));
-    ɵɵadvance(1);
+    ɵɵadvance();
     ɵɵclassProp("mat-calendar-body-selected", ctx_r8._isSelected(item_r9.compareValue))("mat-calendar-body-comparison-identical", ctx_r8._isComparisonIdentical(item_r9.compareValue))("mat-calendar-body-today", ctx_r8.todayValue === item_r9.compareValue);
-    ɵɵadvance(1);
+    ɵɵadvance();
     ɵɵtextInterpolate1(" ", item_r9.displayValue, " ");
   }
 }
@@ -6861,9 +6862,9 @@ function MatCalendarBody_For_2_Template(rf, ctx) {
     const row_r2 = ctx.$implicit;
     const rowIndex_r3 = ctx.$index;
     const ctx_r1 = ɵɵnextContext();
-    ɵɵadvance(1);
+    ɵɵadvance();
     ɵɵconditional(1, rowIndex_r3 === 0 && ctx_r1._firstRowOffset ? 1 : -1);
-    ɵɵadvance(1);
+    ɵɵadvance();
     ɵɵrepeater(row_r2);
   }
 }
@@ -7441,15 +7442,15 @@ _MatCalendarBody.ɵcmp = ɵɵdefineComponent({
     }
     if (rf & 2) {
       ɵɵconditional(0, ctx._firstRowOffset < ctx.labelMinRequiredCells ? 0 : -1);
-      ɵɵadvance(1);
+      ɵɵadvance();
       ɵɵrepeater(ctx.rows);
       ɵɵadvance(2);
       ɵɵproperty("id", ctx._startDateLabelId);
-      ɵɵadvance(1);
+      ɵɵadvance();
       ɵɵtextInterpolate1(" ", ctx.startDateAccessibleName, "\n");
-      ɵɵadvance(1);
+      ɵɵadvance();
       ɵɵproperty("id", ctx._endDateLabelId);
-      ɵɵadvance(1);
+      ɵɵadvance();
       ɵɵtextInterpolate1(" ", ctx.endDateAccessibleName, "\n");
     }
   },
@@ -9303,17 +9304,17 @@ _MatCalendarHeader.ɵcmp = ɵɵdefineComponent({
       ɵɵattribute("aria-label", ctx.periodButtonLabel)("aria-describedby", ctx._periodButtonLabelId);
       ɵɵadvance(2);
       ɵɵtextInterpolate(ctx.periodButtonText);
-      ɵɵadvance(1);
+      ɵɵadvance();
       ɵɵclassProp("mat-calendar-invert", ctx.calendar.currentView !== "month");
       ɵɵadvance(4);
       ɵɵproperty("disabled", !ctx.previousEnabled());
       ɵɵattribute("aria-label", ctx.prevButtonLabel);
-      ɵɵadvance(1);
+      ɵɵadvance();
       ɵɵproperty("disabled", !ctx.nextEnabled());
       ɵɵattribute("aria-label", ctx.nextButtonLabel);
-      ɵɵadvance(1);
+      ɵɵadvance();
       ɵɵproperty("id", ctx._periodButtonLabelId);
-      ɵɵadvance(1);
+      ɵɵadvance();
       ɵɵtextInterpolate(ctx.periodButtonDescription);
     }
   },
@@ -9960,14 +9961,14 @@ _MatDatepickerContent.ɵcmp = ɵɵdefineComponent({
       let tmp_3_0;
       ɵɵclassProp("mat-datepicker-content-container-with-custom-header", ctx.datepicker.calendarHeaderComponent)("mat-datepicker-content-container-with-actions", ctx._actionsPortal);
       ɵɵattribute("aria-modal", true)("aria-labelledby", (tmp_3_0 = ctx._dialogLabelId) !== null && tmp_3_0 !== void 0 ? tmp_3_0 : void 0);
-      ɵɵadvance(1);
+      ɵɵadvance();
       ɵɵproperty("id", ctx.datepicker.id)("ngClass", ctx.datepicker.panelClass)("startAt", ctx.datepicker.startAt)("startView", ctx.datepicker.startView)("minDate", ctx.datepicker._getMinDate())("maxDate", ctx.datepicker._getMaxDate())("dateFilter", ctx.datepicker._getDateFilter())("headerComponent", ctx.datepicker.calendarHeaderComponent)("selected", ctx._getSelected())("dateClass", ctx.datepicker.dateClass)("comparisonStart", ctx.comparisonStart)("comparisonEnd", ctx.comparisonEnd)("@fadeInCalendar", "enter")("startDateAccessibleName", ctx.startDateAccessibleName)("endDateAccessibleName", ctx.endDateAccessibleName);
-      ɵɵadvance(1);
+      ɵɵadvance();
       ɵɵproperty("cdkPortalOutlet", ctx._actionsPortal);
-      ɵɵadvance(1);
+      ɵɵadvance();
       ɵɵclassProp("cdk-visually-hidden", !ctx._closeButtonFocused);
       ɵɵproperty("color", ctx.color || "primary");
-      ɵɵadvance(1);
+      ɵɵadvance();
       ɵɵtextInterpolate(ctx._closeButtonText);
     }
   },
@@ -10971,7 +10972,7 @@ _MatDatepickerInput.ɵdir = ɵɵdefineDirective({
     matDatepicker: "matDatepicker",
     min: "min",
     max: "max",
-    dateFilter: ["matDatepickerFilter", "dateFilter"]
+    dateFilter: [InputFlags.None, "matDatepickerFilter", "dateFilter"]
   },
   exportAs: ["matDatepickerInput"],
   features: [ɵɵProvidersFeature([MAT_DATEPICKER_VALUE_ACCESSOR, MAT_DATEPICKER_VALIDATORS, {
@@ -11144,9 +11145,9 @@ _MatDatepickerToggle.ɵcmp = ɵɵdefineComponent({
     }
   },
   inputs: {
-    datepicker: ["for", "datepicker"],
+    datepicker: [InputFlags.None, "for", "datepicker"],
     tabIndex: "tabIndex",
-    ariaLabel: ["aria-label", "ariaLabel"],
+    ariaLabel: [InputFlags.None, "aria-label", "ariaLabel"],
     disabled: "disabled",
     disableRipple: "disableRipple"
   },
@@ -12091,9 +12092,9 @@ _MatDateRangeInput.ɵcmp = ɵɵdefineComponent({
     if (rf & 2) {
       ɵɵadvance(4);
       ɵɵtextInterpolate(ctx._getInputMirrorValue("start"));
-      ɵɵadvance(1);
+      ɵɵadvance();
       ɵɵclassProp("mat-date-range-input-separator-hidden", ctx._shouldHideSeparator());
-      ɵɵadvance(1);
+      ɵɵadvance();
       ɵɵtextInterpolate(ctx.separator);
       ɵɵadvance(4);
       ɵɵtextInterpolate(ctx._getInputMirrorValue("end"));

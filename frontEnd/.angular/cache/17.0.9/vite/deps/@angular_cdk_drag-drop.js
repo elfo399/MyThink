@@ -2,7 +2,7 @@ import {
   CdkScrollableModule,
   ScrollDispatcher,
   ViewportRuler
-} from "./chunk-HFN3TO7I.js";
+} from "./chunk-6ECEEZ35.js";
 import {
   Directionality,
   _getEventTarget,
@@ -13,10 +13,10 @@ import {
   isFakeMousedownFromScreenReader,
   isFakeTouchstartFromScreenReader,
   normalizePassiveListenerOptions
-} from "./chunk-WQX7VSLJ.js";
+} from "./chunk-55JNB2NI.js";
 import {
   DOCUMENT
-} from "./chunk-BA5DVWTE.js";
+} from "./chunk-4FWDQRHS.js";
 import {
   ChangeDetectorRef,
   ContentChild,
@@ -28,6 +28,7 @@ import {
   Injectable,
   InjectionToken,
   Input,
+  InputFlags,
   NgModule,
   NgZone,
   Optional,
@@ -52,7 +53,7 @@ import {
   ɵɵinject,
   ɵɵloadQuery,
   ɵɵqueryRefresh
-} from "./chunk-ZQSTUKTM.js";
+} from "./chunk-HI2NLCCK.js";
 import {
   Observable,
   Subject,
@@ -66,7 +67,7 @@ import {
   take,
   takeUntil,
   tap
-} from "./chunk-Z7TUEFY2.js";
+} from "./chunk-V4QF72PL.js";
 
 // node_modules/@angular/cdk/fesm2022/drag-drop.mjs
 function extendStyles(dest, source, importantProperties) {
@@ -2267,7 +2268,7 @@ _CdkDragHandle.ɵdir = ɵɵdefineDirective({
   selectors: [["", "cdkDragHandle", ""]],
   hostAttrs: [1, "cdk-drag-handle"],
   inputs: {
-    disabled: ["cdkDragHandleDisabled", "disabled", booleanAttribute]
+    disabled: [InputFlags.HasDecoratorInputTransform, "cdkDragHandleDisabled", "disabled", booleanAttribute]
   },
   standalone: true,
   features: [ɵɵProvidersFeature([{
@@ -2368,7 +2369,7 @@ _CdkDragPreview.ɵdir = ɵɵdefineDirective({
   selectors: [["ng-template", "cdkDragPreview", ""]],
   inputs: {
     data: "data",
-    matchSize: ["matchSize", "matchSize", booleanAttribute]
+    matchSize: [InputFlags.HasDecoratorInputTransform, "matchSize", "matchSize", booleanAttribute]
   },
   standalone: true,
   features: [ɵɵProvidersFeature([{
@@ -2731,16 +2732,16 @@ _CdkDrag.ɵdir = ɵɵdefineDirective({
     }
   },
   inputs: {
-    data: ["cdkDragData", "data"],
-    lockAxis: ["cdkDragLockAxis", "lockAxis"],
-    rootElementSelector: ["cdkDragRootElement", "rootElementSelector"],
-    boundaryElement: ["cdkDragBoundary", "boundaryElement"],
-    dragStartDelay: ["cdkDragStartDelay", "dragStartDelay"],
-    freeDragPosition: ["cdkDragFreeDragPosition", "freeDragPosition"],
-    disabled: ["cdkDragDisabled", "disabled", booleanAttribute],
-    constrainPosition: ["cdkDragConstrainPosition", "constrainPosition"],
-    previewClass: ["cdkDragPreviewClass", "previewClass"],
-    previewContainer: ["cdkDragPreviewContainer", "previewContainer"]
+    data: [InputFlags.None, "cdkDragData", "data"],
+    lockAxis: [InputFlags.None, "cdkDragLockAxis", "lockAxis"],
+    rootElementSelector: [InputFlags.None, "cdkDragRootElement", "rootElementSelector"],
+    boundaryElement: [InputFlags.None, "cdkDragBoundary", "boundaryElement"],
+    dragStartDelay: [InputFlags.None, "cdkDragStartDelay", "dragStartDelay"],
+    freeDragPosition: [InputFlags.None, "cdkDragFreeDragPosition", "freeDragPosition"],
+    disabled: [InputFlags.HasDecoratorInputTransform, "cdkDragDisabled", "disabled", booleanAttribute],
+    constrainPosition: [InputFlags.None, "cdkDragConstrainPosition", "constrainPosition"],
+    previewClass: [InputFlags.None, "cdkDragPreviewClass", "previewClass"],
+    previewContainer: [InputFlags.None, "cdkDragPreviewContainer", "previewContainer"]
   },
   outputs: {
     started: "cdkDragStarted",
@@ -2940,7 +2941,7 @@ _CdkDropListGroup.ɵdir = ɵɵdefineDirective({
   type: _CdkDropListGroup,
   selectors: [["", "cdkDropListGroup", ""]],
   inputs: {
-    disabled: ["cdkDropListGroupDisabled", "disabled", booleanAttribute]
+    disabled: [InputFlags.HasDecoratorInputTransform, "cdkDropListGroupDisabled", "disabled", booleanAttribute]
   },
   exportAs: ["cdkDropListGroup"],
   standalone: true,
@@ -3170,17 +3171,17 @@ _CdkDropList.ɵdir = ɵɵdefineDirective({
     }
   },
   inputs: {
-    connectedTo: ["cdkDropListConnectedTo", "connectedTo"],
-    data: ["cdkDropListData", "data"],
-    orientation: ["cdkDropListOrientation", "orientation"],
+    connectedTo: [InputFlags.None, "cdkDropListConnectedTo", "connectedTo"],
+    data: [InputFlags.None, "cdkDropListData", "data"],
+    orientation: [InputFlags.None, "cdkDropListOrientation", "orientation"],
     id: "id",
-    lockAxis: ["cdkDropListLockAxis", "lockAxis"],
-    disabled: ["cdkDropListDisabled", "disabled", booleanAttribute],
-    sortingDisabled: ["cdkDropListSortingDisabled", "sortingDisabled", booleanAttribute],
-    enterPredicate: ["cdkDropListEnterPredicate", "enterPredicate"],
-    sortPredicate: ["cdkDropListSortPredicate", "sortPredicate"],
-    autoScrollDisabled: ["cdkDropListAutoScrollDisabled", "autoScrollDisabled", booleanAttribute],
-    autoScrollStep: ["cdkDropListAutoScrollStep", "autoScrollStep"]
+    lockAxis: [InputFlags.None, "cdkDropListLockAxis", "lockAxis"],
+    disabled: [InputFlags.HasDecoratorInputTransform, "cdkDropListDisabled", "disabled", booleanAttribute],
+    sortingDisabled: [InputFlags.HasDecoratorInputTransform, "cdkDropListSortingDisabled", "sortingDisabled", booleanAttribute],
+    enterPredicate: [InputFlags.None, "cdkDropListEnterPredicate", "enterPredicate"],
+    sortPredicate: [InputFlags.None, "cdkDropListSortPredicate", "sortPredicate"],
+    autoScrollDisabled: [InputFlags.HasDecoratorInputTransform, "cdkDropListAutoScrollDisabled", "autoScrollDisabled", booleanAttribute],
+    autoScrollStep: [InputFlags.None, "cdkDropListAutoScrollStep", "autoScrollStep"]
   },
   outputs: {
     dropped: "cdkDropListDropped",
