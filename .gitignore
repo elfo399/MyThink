@@ -24,7 +24,8 @@ libpeerconnection.log/
 npm-debug.log
 testem.log
 typings/
-*/.angular
+frontEnd/.angular/
+frontEnd/node_modules/
 
 # e2e
 e2e/*.js
