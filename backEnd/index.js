@@ -71,11 +71,13 @@ function startServer() {
       res.send('hello root node');
   });
   
-  app.get('/selectAllText', (req, res) => {
-    const sqlQuery = 'SELECT * FROM text';
+  app.post('/selectAllText', (req, res) => {
+    const sqlQuery = 'SELECT * FROM text where `Data` = ?';
+    console.log(req.body);
+    const values = [req.body.data];
   
     // Execute the query
-    connection.query(sqlQuery, (err, results) => {
+    connection.query(sqlQuery, values, (err, results) => {
       if (err) {
         console.error('Error executing MySQL query:', err);
         res.status(500).send('Internal Server Error');

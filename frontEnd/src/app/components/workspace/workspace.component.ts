@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { insertText } from '../../DTO/textDTO';
+import { insertText, selectAllText } from '../../DTO/textDTO';
 import { ManagerTextPostItService } from '../../services/manager-text-post-it.service';
+import { CalendarService } from '../../services/calendar.service';
 
 @Component({
   selector: 'app-workspace',
@@ -9,6 +10,8 @@ import { ManagerTextPostItService } from '../../services/manager-text-post-it.se
 })
 export class WorkspaceComponent implements OnInit {
 
+  body: selectAllText = {data: ""};
+
   countText: insertText[] | null = null;
   countDraw: string[] | null = null;
   countCalendar: string[] | null = null;
@@ -16,14 +19,21 @@ export class WorkspaceComponent implements OnInit {
   countCheckbox: string[] | null = null;
   countImage: string[] | null = null;
 
-  constructor (private managerTextPostItService: ManagerTextPostItService) {}
+  constructor (private managerTextPostItService: ManagerTextPostItService, private calendarService: CalendarService) {}
 
   ngOnInit(): void {
-    this.managerTextPostItService.selectAllPostIt().subscribe((allTextPostIt)=> {
-      this.countText = allTextPostIt;
-    });
+    this.createCurrentPostIt();
   }
 
-  
+  createCurrentPostIt() {
+    this.calendarService.hole$.subscribe((date) => {
+    this.body.data = date.getFullYear().toString() + "-" + (date.getMonth() + 1).toString() + "-" + date.getDate().toString();
+  });
+
+  this.managerTextPostItService.selectAllPostIt(this.body).subscribe((allTextPostIt)=> {
+    this.countText = allTextPostIt;
+  }); 
+
+  }
 
 }
