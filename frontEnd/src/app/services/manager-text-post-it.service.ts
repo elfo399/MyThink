@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
 import { API_ENDPOINTS } from '../../const';
 import { insertText, selectAllText } from '../DTO/textDTO';
 
@@ -10,6 +10,9 @@ import { insertText, selectAllText } from '../DTO/textDTO';
 export class ManagerTextPostItService {
 
   private endpoints = API_ENDPOINTS;
+
+  private postItText = new BehaviorSubject<insertText>({value: "", data: ""});
+  allTextPostIt$ = this.postItText.asObservable();
 
   constructor(private http: HttpClient) { }
 
