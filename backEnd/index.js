@@ -6,7 +6,8 @@ const cors = require('cors');
 const app = express();
 
 const log4js = require('log4js');
-log4js.configure('conf/log4js.json');
+
+log4js.configure('conf/log4js.conf.json');
 const logger = log4js.getLogger();
 
 /*
@@ -85,9 +86,19 @@ function startServer() {
   });
   
   app.post('/selectAllText', (req, res) => {
+    logger.info(`Start selectAllText`);
+    logger.info(`request body: ${req.body}`);
+
+    if(!req.body.data) {
+      logger.error(`body.data not valid`);
+      return;
+    }
+
     const sqlQuery = 'SELECT * FROM text where `Data` = ?';
-    logger.info(req.body);
-    const values = [req.body.data];
+    logger.info(`Quey: ${sqlQuery}`);
+
+    const values = req.body.data;
+
   
     // Execute the query
     connection.query(sqlQuery, values, (err, results) => {
@@ -97,17 +108,28 @@ function startServer() {
         return;
       }
   
-      // Print data in the console
-      logger.info('Data from MySQL:', results);
-  
-      // Send the data as a JSON response
+      logger.info(`result: ${results}`);
+      logger.info(`End selectAllText`);
       res.json(results);
     });
   });
   
   app.post('/insert', (req, res) => {  
 
+    logger.info(`Start selectAllText`);
+    logger.info(`request body: ${req.body}`);
+
+    if(!req.body.value){
+      logger.error(`body.value not valid`);
+      return;
+    }
+    if(!!req.body.data) {
+      logger.error(`body.data not valid`);
+      return;
+    }
+
     const sqlQuery = 'INSERT INTO text (Value, Data) VALUES (?, ?)';
+    logger.info(`Query: ${sqlQuery}`);
     const values = [req.body.value, req.body.data];
 
     // Execute the query
@@ -118,10 +140,8 @@ function startServer() {
         return;
       }
   
-      // Print data in the console
       logger.info('Data from MySQL:', results);
-  
-      // Send the data as a JSON response
+      logger.info(`End selectAllText`);
       res.json(results);
     });
     
