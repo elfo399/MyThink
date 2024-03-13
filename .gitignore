@@ -26,6 +26,7 @@ testem.log
 typings/
 frontEnd/.angular/
 frontEnd/node_modules/
+node_modules
 
 # e2e
 e2e/*.js
